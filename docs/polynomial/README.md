@@ -31,6 +31,10 @@ $$
 
 ## 一元多项式
 
+!> NOTE: 数域 P 上的一元多项式, 指的是系数全属于 P, 与符号 x 无关, **只与系数有关**
+
+所有的系数的一元多项式全体构成`多项式环`, `P[x]`
+
 ## reference
 
 - Polynomial. (2022, October 27). In Wikipedia. https://en.wikipedia.org/wiki/Polynomial
