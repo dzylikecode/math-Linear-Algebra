@@ -373,6 +373,8 @@ $$\sigma_k = C_n^k$$
 
 $$f(x_1, x_2, \cdots, x_n) = \varphi(\sigma_1, \sigma_2, \cdots, \sigma_n)$$
 
+证明核心: 递归降次+$首项 \times 首项 = 首项$
+
 ## reference
 
 - Polynomial. (2022, October 27). In Wikipedia. https://en.wikipedia.org/wiki/Polynomial
