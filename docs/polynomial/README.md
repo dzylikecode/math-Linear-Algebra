@@ -401,3 +401,4 @@ $$D(a_1, \cdots, a_n) = D$$
 ## reference
 
 - Polynomial. (2022, October 27). In Wikipedia. https://en.wikipedia.org/wiki/Polynomial
+- [抽象代数|笔记整理（6）——环，多项式环，理想](https://zhuanlan.zhihu.com/p/31441459)
