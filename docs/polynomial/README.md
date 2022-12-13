@@ -375,6 +375,29 @@ $$f(x_1, x_2, \cdots, x_n) = \varphi(\sigma_1, \sigma_2, \cdots, \sigma_n)$$
 
 证明核心: 递归降次+$首项 \times 首项 = 首项$
 
+$$
+\begin{aligned}
+  a x_1^{l_1} \cdots x_i^{l_i} \cdots x_n^{l_n} &= a (x_1)^{l_1-l_2}(x_1 x_2)^{l_2-l_3} \cdots (x_1 x_2 \cdots x_n)^{l_n} \\
+  &= \partial (a \sigma_1^{l_1-l_2} \sigma_2^{l_2-l_3} \cdots \sigma_n^{l_n})
+\end{aligned}
+$$
+
+还可以证明是唯一确定的
+
+称为**对称多项式基本定理**
+
+---
+
+一元多项式的判别式, 可以用来判断是否有重根
+
+$$D = \prod_{i<j}(x_i-x_j)^2$$
+
+由韦达定理和对称多项式基本定理:
+
+$$D(a_1, \cdots, a_n) = D$$
+
+判断重根的充要条件
+
 ## reference
 
 - Polynomial. (2022, October 27). In Wikipedia. https://en.wikipedia.org/wiki/Polynomial
