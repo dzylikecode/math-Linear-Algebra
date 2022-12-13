@@ -12,6 +12,10 @@
 
   - [sympy-polys](https://docs.sympy.org/latest/modules/polys/basics.html#introduction)
 
+  - [latexify_py](https://github.com/google/latexify_py)
+
+    便于显示, 使用函数式编程方式
+
 ## feelings
 
 ### 焦虑
