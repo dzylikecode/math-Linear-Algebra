@@ -40,6 +40,10 @@ example:
 
   more details: [求解 Ax=0：主变量，特解](https://zhuanlan.zhihu.com/p/45815011)
 
+## 感悟
+
+知识先行, 反正有笔记, 做一些练习题就可
+
 ## reference
 
 - 高等代数 第四版 北京大学数学系前代数雄小组 编
