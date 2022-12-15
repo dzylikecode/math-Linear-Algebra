@@ -659,3 +659,87 @@ $$
 齐次方程组, 当$d \neq 0$时, 有唯一解$(0, \cdots, 0)$
 
 ## Laplace expansion
+
+$M$: k 级子式
+
+$M^{\prime}$: k 级子式的余子式
+
+$A$: 代数余子式
+
+$$A = (-1)^{\sum_{s=1}^{k} i_s+j_s} M^{\prime}$$
+
+其中, $i_s, j_s$ 为 $M$ 的所选取的行号和列号
+
+---
+
+引理:
+
+$M \cdot A$的每一项都属于$D$
+
+---
+
+Laplace
+
+$$D = M_1 A_1 + \cdots + M_t A_t$$
+
+证明:
+
+易知, $M_i A_i$ 与 $M_j A_j 没有公共项
+
+根据引理, 只需证明项数个数相等
+
+其中, $t = C_n^k$
+
+即
+
+$$C_n^k \cdot k! \cdot (n-k)! = n!$$
+
+---
+
+证明:
+
+$$|AB| = |A| \cdot |B|$$
+
+解:
+
+构造一个矩阵 $C$
+
+$$
+C =
+\begin{pmatrix}
+A & 0 \\
+-E & B
+\end{pmatrix}
+$$
+
+由 Laplace 知
+
+$$|C| = |A| \cdot |B|$$
+
+由初等行变换, 不改变行列式的值
+
+$$
+D =
+\begin{pmatrix}
+0 & AB \\
+-E & B \\
+\end{pmatrix}
+$$
+
+由 Laplace
+
+$$|D| = (-1)^{\sum_i(i+n+i)} |-E| \cdot |B| = |AB|$$
+
+故
+
+$$|AB| = |D| = |C| = |A| \cdot |B|$$
+
+一点收获: 初等变换与一些特殊的矩阵关联
+
+$$
+\begin{pmatrix}
+ E & A \\
+ 0 & E
+\end{pmatrix}
+\cdot C = D
+$$
