@@ -1,3 +1,1 @@
 - [:boat:](/README.md)
-- [多项式](/docs/polynomial/README.md)
-- [矩阵](/docs/matrix/README.md)
