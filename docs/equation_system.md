@@ -66,3 +66,26 @@ $$
   用$(x_{r+1}, \cdots, x_{n})$表示$(x_1, \cdots, x_r)$, 称为**一般解**
 
   $(x_{r+1}, \cdots, x_{n})$: 自由未知量
+
+---
+
+齐次方程的个数$s$
+
+当$ s \leq n$时, 必有非零解
+
+---
+
+增广矩阵
+
+$$
+\begin{bmatrix}
+    a_{11} & a_{12} & \cdots & a_{1n} & b_1 \\
+    a_{21} & a_{22} & \cdots & a_{2n} & b_2 \\
+    \vdots & \vdots & \ddots & \vdots & \vdots \\
+    a_{n1} & a_{n2} & \cdots & a_{nn} & b_n
+\end{bmatrix}
+$$
+
+与线性方程组对应, 转化阶梯形的过程是等价的
+
+## n-维向量空间
