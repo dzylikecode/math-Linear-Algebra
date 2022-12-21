@@ -483,3 +483,60 @@ $$\forall r = 0 \Rightarrow \forall r+1=0$$
 说明, 初等变换不改变秩
 
 ## 有解判别定理
+
+向量形式:
+
+$$x_1 \alpha_1 + x_2 \alpha_2 + \cdots + x_n \alpha_n = \beta \Leftrightarrow 有解$$
+
+即: 有解等价于 $\beta$ 可由 $\alpha_1, \alpha_2, \cdots, \alpha_n$ 线性表出
+
+用秩的观点来看:
+
+$$r(\alpha_1, \alpha_2, \cdots, \alpha_n) = r(\alpha_1, \alpha_2, \cdots, \alpha_n, \beta) \Leftrightarrow 有解$$
+
+解:
+
+必要性:
+
+$$r(\alpha_1, \alpha_2, \cdots, \alpha_n) = r(\alpha_1, \alpha_2, \cdots, \alpha_n, \beta)\Leftarrow 有解$$
+
+有解, 即 $\beta$ 可由 $\alpha_1, \alpha_2, \cdots, \alpha_n$ 线性表出
+
+可得 $\alpha_1, \alpha_2, \cdots, \alpha_n$与$\alpha_1, \alpha_2, \cdots, \alpha_n, \beta$等价, 则秩相等
+
+充分性:
+
+$$r(\alpha_1, \alpha_2, \cdots, \alpha_n) = r(\alpha_1, \alpha_2, \cdots, \alpha_n, \beta)\Rightarrow 有解$$
+
+设$\alpha_1, \alpha_2, \cdots, \alpha_r$是$\alpha_1, \alpha_2, \cdots, \alpha_n$的极大线性无关组
+
+易知, 是$\alpha_1, \alpha_2, \cdots, \alpha_n, \beta$的线性无关组
+
+又因为个数为 r 个, 则为其极大线性无关组
+
+故$\beta$能被其线性表出
+
+---
+
+用增广矩阵$\overline{A}$描述即
+
+$$r(\overline{A})=r(A)$$
+
+用消元法也可以证明
+
+---
+
+$$
+\begin{cases}
+    c_{11}x_1 + c_{12}x_2 + \cdots + c_{1n}x_n = d_1 - c_{1,r+1}x_{r+1} - \cdots - c_{1n}x_n\\
+    c_{21}x_1 + c_{22}x_2 + \cdots + c_{2n}x_n = d_2 - c_{2,r+1}x_{r+1} - \cdots - c_{2n}x_n\\
+    \vdots\\
+    c_{r1}x_1 + c_{r2}x_2 + \cdots + c_{rn}x_n = d_r - c_{r,r+1}x_{r+1} - \cdots - c_{rn}x_n\\
+\end{cases}
+$$
+
+将右边看作向量, 可用克拉默法来解
+
+显然解就是向量形式
+
+## 解的结构
