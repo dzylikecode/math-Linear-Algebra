@@ -1,3 +1,4 @@
 - [:boat:](/docs/README.md)
 - [多项式](/docs/polynomial.md)
 - [行列式](/docs/determinant.md)
+- [方程组](/docs/equation_system.md)
