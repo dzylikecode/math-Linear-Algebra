@@ -167,3 +167,157 @@ $$\begin{pmatrix} A & 0 \\ 0 & B \end{pmatrix}^{-1}=\begin{pmatrix} A^{-1} & 0 \
 准对角矩阵: 元素为矩阵
 
 ## 初等矩阵
+
+由$E$经过一次初等变换得到
+
+|    symbol    |            row            |            col            |
+| :----------: | :-----------------------: | :-----------------------: |
+|  $P(i, j)$   |   交换第$i$行和第$j$行    |   交换第$i$列和第$j$列    |
+|  $P(i(c))$   |      第$i$行乘以$c$       |      第$i$列乘以$c$       |
+| $P(i, j(c))$ | 第$i$行加上第$j$行乘以$c$ | 第$i$列加上第$j$列乘以$c$ |
+
+行和列的矩阵是一样的, 真正表现效果的是通过左乘还是右乘来作用行或者列
+
+---
+
+初等变换
+
+行变换: 左乘初等矩阵
+
+列变换: 右乘初等矩阵
+
+记忆方法:
+
+$$
+PA=P \begin{pmatrix}
+    A_1 \\ A_2 \\ \vdots \\ A_n
+\end{pmatrix}
+$$
+
+只能操作行, 因而左乘是行变换
+
+---
+
+$$
+\begin{aligned}
+    P(i, j)^{-1} &= P(j, i) \\
+    P(i(c))^{-1} &= P(i(\frac{1}{c})) \\
+    P(i, j(c))^{-1} &= P(i, j(-c))
+\end{aligned}
+$$
+
+---
+
+等价: B 可由 A 经过一系列初等变换得到
+
+---
+
+标准形: 对角线上 r 个 1
+
+任意矩阵与标准形等价
+
+解:
+
+数学归纳法
+
+---
+
+$$A, B等价 \Leftrightarrow A = P_1 \cdots P_l B Q_1 \cdots Q_t$$
+
+特别的, A 可逆:
+
+$$A=N_1 \cdots N_k$$
+
+---
+
+由于
+
+$$A=N_1 \cdots N_k$$
+
+$$A^{-1}=N_k^{-1} \cdots N_1^{-1}$$
+
+故
+
+$$N_k^{-1} \cdots N_1^{-1}A = E$$
+
+此时是左乘, A 可以通过初等行变换即可变成标准形
+
+---
+
+求逆的方法: 利用 A 只需初等行变换即可变成$E$
+
+$$P(A, E) = (PA, PE) = (E, A^{-1})$$
+
+故, 对$(A, E)$ 进行初等行变换即可
+
+## 应用
+
+$$T = \begin{pmatrix} A & 0 \\ C & D \end{pmatrix}$$
+
+行变换(借助 $E$ 来思考初等矩阵)
+
+$$\begin{pmatrix} E & 0 \\ -CA^{-1} & E \end{pmatrix} T = \begin{pmatrix} A & 0 \\ 0 & D \end{pmatrix}$$
+
+---
+
+证明:
+
+$$|AB| = |A||B|$$
+
+解:
+
+引理:
+
+$$
+\begin{vmatrix}
+    A & 0 \\
+    C & B
+\end{vmatrix}
+= |A| |B|
+$$
+
+由:
+
+$$
+\begin{pmatrix}
+    E & A \\
+    0 & E
+\end{pmatrix}
+\begin{pmatrix}
+    A & 0 \\
+    -E & B
+\end{pmatrix} =
+\begin{pmatrix}
+    0 & AB \\
+    -E & B
+\end{pmatrix}
+$$
+
+由于初等变换不改变行列式的值, 故:
+
+$$
+left=\begin{vmatrix}
+    A & 0 \\
+    -E & B
+\end{vmatrix} = |A| |B|
+$$
+
+而另一边:
+
+$$
+\begin{aligned}
+right &=\begin{vmatrix}
+0 & AB \\
+-E & B
+\end{vmatrix} \\
+&= (-1)^{n}
+\begin{vmatrix}
+    AB &  0 \\
+    B & -E
+\end{vmatrix} \\
+&= (-1)^{n} |-E| |AB| \\
+&= |AB|
+\end{aligned}
+$$
+
+> 巧妙的是证明右边, 再次用了引理
