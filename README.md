@@ -82,6 +82,13 @@
 
     便于显示, 使用函数式编程方式
 
+推荐
+
+sympy:
+
+- [docs](https://docs.sympy.org/latest/modules/polys/reference.html)
+- [A SymPy introduction](https://docs.juliahub.com/SymPy/KzewI/1.0.28/introduction/)
+
 ## reference
 
 - 高等代数 第四版 北京大学数学系前代数雄小组 编
